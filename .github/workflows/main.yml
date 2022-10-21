@@ -27,7 +27,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: matanel-snyk/juice-shop:latest,matanel-snyk/juice-shop:${{steps.vars.outputs.tag}}
+        tags: matanelsnyk/juice-shop:latest,matanelsnyk/juice-shop:${{steps.vars.outputs.tag}}
                
     - name: Snyk container scan
       continue-on-error: true
